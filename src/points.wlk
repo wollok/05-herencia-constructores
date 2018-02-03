@@ -6,6 +6,8 @@ class Point {
 		x = _x
 		y = _y
 	}
+	
+	method axis() = x 
 }
 
 class Point3D inherits Point {
@@ -15,5 +17,5 @@ class Point3D inherits Point {
 		z = _z
 	}
 
-	method axis() = x 
+	method volume() = x * y * z
 }

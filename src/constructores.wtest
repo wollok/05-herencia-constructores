@@ -1,0 +1,27 @@
+import pelotas.*
+import points.*
+
+describe "tests de constructores" {
+
+	const pelotaBlanca = new Pelota("blanca")
+	const pelotaBasket = new PelotaBasket("naranja")
+	const pelotaBasketDeDavid = new PelotaBasket("naranja", "david")
+		
+	test "la pelota es blanca" {
+		assert.equals(pelotaBlanca.color(), "blanca")
+	}
+	
+	test "la pelota de básket es nueva" {
+		assert.that(pelotaBasket.esNueva())
+	}
+	
+	test "la pelota de básket no tiene duenio" {
+		assert.notThat(pelotaBasket.tieneDuenio())
+	}
+
+	test "la pelota de básket de David tiene duenio" {
+		assert.that(pelotaBasketDeDavid.tieneDuenio())
+	}
+
+
+}
