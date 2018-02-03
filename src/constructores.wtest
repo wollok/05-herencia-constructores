@@ -6,7 +6,13 @@ describe "tests de constructores" {
 	const pelotaBlanca = new Pelota("blanca")
 	const pelotaBasket = new PelotaBasket("naranja")
 	const pelotaBasketDeDavid = new PelotaBasket("naranja", "david")
-		
+	
+	test "dos puntos en 2D y 3D comparten la misma abscisa" {
+		const point2D = new Point(2, 3)	
+		const point3D = new Point3D(2, 9, 1)
+		assert.equals(point2D.axis(), point3D.axis())
+	}
+	
 	test "la pelota es blanca" {
 		assert.equals(pelotaBlanca.color(), "blanca")
 	}

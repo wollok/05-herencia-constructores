@@ -15,7 +15,7 @@ class PelotaFutbol inherits Pelota {
 
 	var duenio
 
-	constructor(_color, _duenio) = self(_color) {
+	constructor(_color, _duenio) = super(_color) {
 		duenio = _duenio
 	}
 
