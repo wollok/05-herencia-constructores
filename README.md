@@ -1,4 +1,7 @@
 # Herencia de constructores
+ 
+[![Build Status](https://travis-ci.org/wollok/herenciaConstructores.svg?branch=master)](https://travis-ci.org/wollok/herenciaConstructores)
+
 
 Podés ver cómo se trabaja un punto en dos dimensiones y otro en un espacio tridimensional. 
 
